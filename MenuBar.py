@@ -12,6 +12,7 @@ class Example(QMainWindow):
         exitAction=QAction(QIcon('Security.png'),'&Exit',self)
         exitAction.setShortcut('Ctrl+Q')
         exitAction.setStatusTip('Exit application')
+        exitAction.triggered.connect(qApp.quit)
 
         self.statusBar()
 
